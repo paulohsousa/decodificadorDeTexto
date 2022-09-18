@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Decodificador_de_Texto</title>
+  <meta charset="utf-8">
+  <!-- Bootstrap versão 5.2.0 -->
+  <link href="./bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="./fontes/Inter-VariableFont_slnt,wght.ttf">-->
+  <link rel="stylesheet" href="./css/decodificador_de_texto.css">
+  <script src="https://kit.fontawesome.com/5aa3def401.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+  <img id="img-logo" src="./imagens/Vector.png" alt="Logo-Alura">
+
+  <form id="formulario" class="div_input">
+    <input id="captura" class="form-captura-texto" type="text" placeholder="Digite seu texto" value="">
+  </form>
+  <div>
+    <p id="valorDigitado"></p>
+  </div>
+
+  <div class="col card" style="width:400px !important">
+    <div class="card-body">
+      <div   class="form-floating mb-3">
+        <input id = "output" type="text" class="form-control-plaintext" >
+        <label for="floatingEmptyPlaintextInput"></label>
+        <div class="muda-imagem">
+          <img id="oculta-texto" class="  img-fluid" src="./imagens/vector_person.png"
+          alt="Personagem com lupa aguardando a pesquisa.">
+        <div class=" texto-aviso">
+          <h4><b>Nenhuma mensagem encontrada</b></h4>
+          <p>Digite um texto que você deseja criptografar</p>
+        </div>
+        </div>
+        
+
+      </div>
+
+    </div>
+    <div class="card-footer">
+      <button id="copy" type="button" class="copiar btn-copiar btn-secondary btn-lg" style="color:#0A3871 ;">
+        Copiar
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <footer class="buttons">
+    <div>
+      <p>
+        <i class="fa-solid fa-circle-exclamation"></i>
+        letras minúsculas e sem acento
+      </p>
+    </div>
+    <button id="botao" type="submit" class="criptografar btn btn-primary btn-lg" value="Enviar">
+      Criptografar
+    </button>
+    <button  type="button" class="descriptografar btn btn-secondary btn-lg" style="color:#0A3871 ;">
+      Descriptografar
+    </button>
+    <address>
+      <p>Desenvolvido por
+        <a href="https://github.com/paulohsousa">
+          Paulo Henrique de Sousa
+        </a>
+        <br>
+        Se encontrar algum erro,por gentileza
+        <a href="https://www.linkedin.com/in/paulohesousa/">
+          Contate o administrador do site
+        </a>
+      </p>
+    </address>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="./bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./scripts/decodificador_de_texto.js"></script>
+</body>
+
+</html>
