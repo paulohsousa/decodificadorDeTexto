@@ -1,5 +1,7 @@
 body {
-
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: baseline;
     background-color: #E5E5E5;
 }
 
